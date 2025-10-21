@@ -27,7 +27,7 @@
                         'brand-green-hover': '#9bff5b',
                         'brand-discord': '#5865F2',
                         primary: '#00bcd4', // Your original primary color
-                        secondary: '#8b5cf6', // Your original secondary color
+                        secondary: '#8b5cf6', // Your original secondary color (light purple)
                     },
                 }
             }
@@ -42,8 +42,8 @@
         }
 
         .hero-section {
-             /* Use the mcFleet background */
-            background: linear-gradient(0deg, #0d1f2e 0%, #0d1f2ea3 100%), url('https://cdn.tebex.io/store/903759/templates/198681/assets/45deb4e9ec259fa553a87874c5d9a3a6cf963c7c.png');
+             /* Use the new background image */
+            background: linear-gradient(0deg, #0d1f2e 0%, rgba(13, 31, 46, 0.7) 100%), url('https://readdy.ai/api/search-image?query=mystical%20dark%20fantasy%20landscape%20with%20swirling%20purple%20and%20cyan%20energy%20portals%2C%20ethereal%20mists%2C%20floating%20crystal%20formations%2C%20dramatic%20lighting%2C%20cinematic%20atmosphere%2C%20dark%20magical%20realm%20with%20glowing%20elements%2C%20mysterious%20ancient%20structures%20in%20background&width=1920&height=1080&seq=hero001&orientation=landscape');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -137,13 +137,16 @@
 
 <body class="bg-brand-dark">
 
+    <!-- NEW Header Section -->
     <header class="hero-section">
         <nav class="p-4">
             <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <!-- Left Links -->
                 <div class="flex items-center gap-2">
                     <a href="#" class="header-btn bg-brand-blue hover:opacity-90 text-white font-bold py-2 px-4 rounded-md text-sm sm:text-base">Home</a>
-                    <a href="#ranks" class="header-btn bg-brand-green hover:bg-brand-green-hover hover:text-brand-dark text-white font-bold py-2 px-4 rounded-md text-sm sm:text-base">Store</a>
+                    <a href="#ranks" class="header-btn bg-secondary hover:bg-secondary/80 text-white font-bold py-2 px-4 rounded-md text-sm sm:text-base">Store</a>
                 </div>
+                <!-- Right Links -->
                 <div class="flex items-center gap-2">
                     <button id="ip-copy-btn" class="header-btn bg-black bg-opacity-30 hover:bg-opacity-50 text-white font-semibold py-2 px-4 rounded-md flex items-center gap-2 text-sm sm:text-base">
                         <i class="ri-server-line"></i>
@@ -162,9 +165,11 @@
         </div>
     </header>
     
+    <!-- Main Content Area -->
     <main class="-mt-16 sm:-mt-20 z-10 relative">
         <div class="max-w-6xl mx-auto px-4">
             
+            <!-- NEW Store & Login Bar -->
             <div id="store" class="bg-brand-light border border-brand-border rounded-lg p-4 flex flex-col md:flex-row items-center justify-between shadow-lg gap-4">
                 <div class="flex items-center space-x-3">
                      <img src="https://static.readdy.ai/image/77fb13bf09ca7e6cd3a010ee816e6478/b15e1ab27f31f6972fd10171fc3fdcd7.png" alt="Small Logo" class="w-12 h-12 rounded">
@@ -174,11 +179,13 @@
                      </div>
                 </div>
                 <div id="login-display-area" class="flex items-center justify-center space-x-4 w-full md:w-auto">
-                     </div>
+                     <!-- Login/Logout UI will be injected here by JavaScript -->
+                </div>
             </div>
         </div>
     </main>
     
+    <!-- YOUR ORIGINAL RANKS/STORE SECTION -->
     <section id="ranks" class="py-20 bg-brand-dark">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -187,22 +194,29 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 
+                <!-- VIP Card -->
                 <div class="bg-brand-light border-2 border-primary/30 rounded-xl p-6 hover:border-primary/60 rank-card-gradient"><div class="text-center mb-6"><div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-primary/20 rounded-lg"><i class="ri-vip-crown-line text-primary text-2xl"></i></div><h3 class="text-2xl font-bold text-primary mb-2">VIP</h3><div class="text-3xl font-bold text-white">₹149</div></div><ul class="space-y-3 mb-6 text-brand-text"><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>Chat colors</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>Spectator mode</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>Custom chat messages</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>VIP prefix</li></ul><button class="w-full bg-primary hover:bg-primary/90 text-slate-900 py-3 rounded-md font-semibold whitespace-nowrap purchase-btn" data-checkout-link="upi://pay?pa=ladhevansh@fam&am=149&cu=INR">Purchase VIP</button></div>
                 
+                <!-- VIP+ Card -->
                 <div class="bg-brand-light border-2 border-secondary/30 rounded-xl p-6 hover:border-secondary/60 rank-card-gradient"><div class="text-center mb-6"><div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-secondary/20 rounded-lg"><i class="ri-vip-crown-2-line text-secondary text-2xl"></i></div><h3 class="text-2xl font-bold text-secondary mb-2">VIP+</h3><div class="text-3xl font-bold text-white">₹299</div></div><ul class="space-y-3 mb-6 text-brand-text"><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-secondary"></i></div>All VIP perks</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-secondary"></i></div>Fly mode</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-secondary"></i></div>Priority support</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-secondary"></i></div>Access to VIP+ areas</li></ul><button class="w-full bg-secondary hover:bg-secondary/90 text-white py-3 rounded-md font-semibold whitespace-nowrap purchase-btn" data-checkout-link="upi://pay?pa=ladhevansh@fam&am=299&cu=INR">Purchase VIP+</button></div>
                 
+                <!-- MVP Card -->
                 <div class="bg-brand-light border-2 border-pink-500/30 rounded-xl p-6 hover:border-pink-500/60 rank-card-gradient"><div class="text-center mb-6"><div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-pink-500/20 rounded-lg"><i class="ri-medal-line text-pink-500 text-2xl"></i></div><h3 class="text-2xl font-bold text-pink-500 mb-2">MVP</h3><div class="text-3xl font-bold text-white">₹449</div></div><ul class="space-y-3 mb-6 text-brand-text"><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-pink-500"></i></div>All VIP+ perks</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-pink-500"></i></div>Priority matchmaking</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-pink-500"></i></div>Advanced spectral features</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-pink-500"></i></div>Exclusive MVP kit</li></ul><button class="w-full bg-pink-500 hover:bg-pink-500/90 text-white py-3 rounded-md font-semibold whitespace-nowrap purchase-btn" data-checkout-link="upi://pay?pa=ladhevansh@fam&am=499&cu=INR">Purchase MVP</button></div>
                 
+                <!-- MVP+ Card -->
                 <div class="bg-brand-light border-2 border-blue-500/30 rounded-xl p-6 hover:border-blue-500/60 rank-card-gradient"><div class="text-center mb-6"><div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-blue-500/20 rounded-lg"><i class="ri-trophy-line text-blue-500 text-2xl"></i></div><h3 class="text-2xl font-bold text-blue-500 mb-2">MVP+</h3><div class="text-3xl font-bold text-white">₹599</div></div><ul class="space-y-3 mb-6 text-brand-text"><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-blue-500"></i></div>All MVP perks</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-blue-500"></i></div>Nick protection</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-blue-500"></i></div>Custom death messages</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-blue-500"></i></div>Exclusive cosmetics</li></ul><button class="w-full bg-blue-500 hover:bg-blue-500/90 text-white py-3 rounded-md font-semibold whitespace-nowrap purchase-btn" data-checkout-link="upi://pay?pa=ladhevansh@fam&am=599&cu=INR">Purchase MVP+</button></div>
                 
+                <!-- Legend Card (Unique Style) -->
                 <div class="bg-gradient-to-br from-orange-900/30 via-brand-light to-brand-light border-2 border-orange-500/50 rounded-xl p-6 hover:border-orange-400 legend-glow rank-card-gradient relative overflow-hidden"><div class="absolute top-0 right-0 h-16 w-16"><div class="absolute transform rotate-45 bg-orange-500 text-center text-white font-semibold py-1 right-[-34px] top-[32px] w-[170px]">Premium</div></div><div class="text-center mb-6"><div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-orange-500/20 rounded-lg"><i class="ri-fire-line text-orange-400 text-2xl"></i></div><h3 class="text-2xl font-bold text-orange-400 mb-2">Legend</h3><div class="text-3xl font-bold text-white">₹799</div></div><ul class="space-y-3 mb-6 text-brand-text"><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-orange-500"></i></div>All MVP+ perks</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-orange-500"></i></div>Legendary effects</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-orange-500"></i></div>Unlimited map selection</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-orange-500"></i></div>Early access to new gamemodes</li></ul><button class="w-full bg-orange-500 hover:bg-orange-500/90 text-white py-3 rounded-md font-semibold whitespace-nowrap purchase-btn" data-checkout-link="upi://pay?pa=ladhevansh@fam&am=799&cu=INR">Purchase Legend</button></div>
                 
+                <!-- Immortal Card (Unique Style) -->
                 <div class="bg-gradient-to-br from-cyan-900/30 via-brand-light to-brand-light border-2 border-cyan-400/50 rounded-xl p-6 hover:border-cyan-300 immortal-glow rank-card-gradient relative overflow-hidden"><div class="absolute top-0 right-0 h-16 w-16"><div class="absolute transform rotate-45 bg-cyan-500 text-center text-white font-semibold py-1 right-[-34px] top-[32px] w-[170px]">Ultimate</div></div><div class="text-center mb-6"><div class="w-12 h-12 flex items-center justify-center mx-auto mb-4 bg-primary/20 rounded-lg"><i class="ri-infinity-line text-cyan-400 text-2xl"></i></div><h3 class="text-2xl font-bold text-cyan-400 mb-2">Immortal</h3><div class="text-3xl font-bold text-white">₹999</div></div><ul class="space-y-3 mb-6 text-brand-text"><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>All Legend perks</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>Ultimate packages</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>Immortal private matches</li><li class="flex items-center"><div class="w-4 h-4 flex items-center justify-center mr-3"><i class="ri-check-line text-primary"></i></div>Early access to new gamemodes</li></ul><button class="w-full bg-primary hover:bg-primary/90 text-slate-900 py-3 rounded-md font-semibold whitespace-nowrap purchase-btn" data-checkout-link="upi://pay?pa=ladhevansh@fam&am=999&cu=INR">Purchase Immortal</button></div>
             
             </div>
         </div>
     </section>
 
+    <!-- YOUR ORIGINAL OTHER SECTIONS -->
     <section class="py-20 bg-brand-light">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-12"><h2 class="text-4xl font-bold mb-4 text-white">Rank Comparison</h2></div>
@@ -212,6 +226,7 @@
     <section id="skin-viewer" class="py-20 bg-brand-dark"><div class="max-w-7xl mx-auto px-6 text-center"><h2 class="text-4xl font-bold mb-4 text-white">Minecraft Skin Viewer</h2><p class="text-xl text-brand-text max-w-3xl mx-auto mb-8">Enter your Java Edition username below to display a full-body render of your skin.</p><div class="flex justify-center items-center gap-2 max-w-md mx-auto mb-8"><input type="text" id="skin-username-input" placeholder="Enter Username" class="w-full bg-brand-light border border-brand-border rounded-lg py-3 text-base px-4 text-white focus:outline-none focus:ring-2 focus:ring-brand-blue"><button id="view-skin-btn" class="bg-secondary hover:bg-secondary/90 text-white px-6 py-3 rounded-md font-semibold whitespace-nowrap transition-all duration-300">View Skin</button></div><div id="skin-render-container" class="h-96 flex items-center justify-center bg-brand-light/50 rounded-lg p-4"><img id="skin-image" src="https://visage.surgeplay.com/full/512/steve" alt="Minecraft Skin Render" class="max-h-full transition-opacity duration-500 opacity-100" style="image-rendering: pixelated;"></div></div></section>
     <section id="vote" class="py-20 bg-brand-light"><div class="max-w-7xl mx-auto px-6"><div class="text-center mb-16"><h2 class="text-4xl font-bold mb-4 text-white">Vote For Reaper MC</h2><p class="text-xl text-brand-text max-w-3xl mx-auto">Vote daily to earn in-game rewards and help our community grow!</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"><a href="#" target="_blank" class="bg-brand-dark p-6 rounded-xl border-2 border-transparent hover:border-primary transition-all duration-300 hover-scale text-center"><h3 class="text-xl font-bold text-white">Vote Site 1</h3><p class="text-brand-text mt-1">e.g., PlanetMinecraft</p></a><a href="#" target="_blank" class="bg-brand-dark p-6 rounded-xl border-2 border-transparent hover:border-primary transition-all duration-300 hover-scale text-center"><h3 class="text-xl font-bold text-white">Vote Site 2</h3><p class="text-brand-text mt-1">e.g., Minecraft-Server-List</p></a><a href="#" target="_blank" class="bg-brand-dark p-6 rounded-xl border-2 border-transparent hover:border-primary transition-all duration-300 hover-scale text-center"><h3 class="text-xl font-bold text-white">Vote Site 3</h3><p class="text-brand-text mt-1">e.g., TopG</p></a><a href="#" target="_blank" class="bg-brand-dark p-6 rounded-xl border-2 border-transparent hover:border-primary transition-all duration-300 hover-scale text-center"><h3 class="text-xl font-bold text-white">Vote Site 4</h3><p class="text-brand-text mt-1">e.g., Minecraft-MP</p></a><a href="#" target="_blank" class="bg-brand-dark p-6 rounded-xl border-2 border-transparent hover:border-primary transition-all duration-300 hover-scale text-center"><h3 class="text-xl font-bold text-white">Vote Site 5</h3><p class="text-brand-text mt-1">e.g., TopMinecraftServers</p></a><a href="#" target="_blank" class="bg-brand-dark p-6 rounded-xl border-2 border-transparent hover:border-primary transition-all duration-300 hover-scale text-center"><h3 class="text-xl font-bold text-white">Vote Site 6</h3><p class="text-brand-text mt-1">e.g., MinecraftServers.org</p></a></div></div></section>
     
+    <!-- YOUR ORIGINAL FOOTER (Slightly adjusted style to match) -->
     <footer class="bg-brand-darkest mt-0">
         <div class="footer-bottom bg-black bg-opacity-20 border-t border-brand-border">
             <div class="max-w-6xl mx-auto px-4 py-4 text-center sm:text-left">
@@ -222,6 +237,7 @@
     </footer>
 
 
+    <!-- Login Modal -->
     <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center p-4 hidden">
       <div class="bg-brand-light border-4 border-brand-border rounded-lg text-center p-6 sm:p-8 max-w-md w-full relative">
         <button id="login-modal-close" class="absolute top-4 right-4 text-brand-text hover:text-white text-2xl">&times;</button>
@@ -236,8 +252,10 @@
       </div>
     </div>
     
+    <!-- IP Copy Feedback -->
     <div class="copy-feedback" id="copyFeedback">IP Copied!</div>
 
+    <!-- QR Code Popup Modal -->
     <div id="qr-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-70 p-4 hidden">
         <div class="bg-brand-light border border-brand-border rounded-xl text-center p-6 max-w-sm w-full relative">
             <button id="modal-close" class="absolute -top-3 -right-3 h-8 w-8 bg-red-500 text-white rounded-full text-lg font-bold">&times;</button>
@@ -299,7 +317,7 @@
                         renderLoginUI();
                     });
                 } else {
-                    loginDisplayArea.innerHTML = `<button id="login-btn" class="bg-brand-green hover:bg-brand-green-hover hover:text-brand-dark text-white px-5 py-2 rounded-md font-bold transition-colors w-full sm:w-auto">Please Login</button>`;
+                    loginDisplayArea.innerHTML = `<button id="login-btn" class="bg-secondary hover:bg-secondary/80 text-white px-5 py-2 rounded-md font-bold transition-colors w-full sm:w-auto">Please Login</button>`;
                     document.getElementById('login-btn').addEventListener('click', () => {
                         loginModal.classList.remove('hidden');
                     });
@@ -384,3 +402,5 @@
     </script>
 </body>
 </html>
+
+
